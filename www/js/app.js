@@ -94,6 +94,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.patient-details', {
+      url: '/patient-details',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/patient-details.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
