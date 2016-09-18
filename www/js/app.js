@@ -139,6 +139,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.campaign-champion', {
+      url: '/campaign-champion',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/campaign-champion.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
