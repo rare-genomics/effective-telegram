@@ -148,6 +148,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.start-campaign', {
+      url: '/start-campaign',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/start-campaign.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
