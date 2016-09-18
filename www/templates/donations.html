@@ -6,21 +6,61 @@
             </button>
         </a>
 
-        <button class="button button-block button-light">
-            Don Donater
-        </button>
+        <h1 class="donations">Don Donater</h1>
 
-        <div class="item range">
-            <h2>Bronze</h2>
-            <input type="range" name="volume" value="100" disabled>
+        <div class="row donations">
+            <div class="col">
+                <div class="donate-graph-1">
+                </div>
+                Bronze
+            </div>
+            <div class="col">
+                <div class="donate-graph-2">
+                </div>
+                Silver
+            </div>
+            <div class="col">
+                <div class="donate-graph-3">
+                </div>
+                Gold
+            </div>
         </div>
-        <div class="item range">
-            <h2>Silver</h2>
-            <input type="range" name="volume" value="50" disabled>
-        </div>
-        <div class="item range">
-            <h2>Gold</h2>
-            <input type="range" name="volume" value="0" disabled>
+        <a class="button button-icon icon ion-trophy center-trophy"></a>
+        <label class="item item-input item-select">
+            <div class="input-label">
+            Donation History
+            </div>
+            <select>
+                <!--<option>Blue</option>
+                <option selected>Green</option>
+                <option>Red</option>-->
+            </select>
+        </label>
+        <div class="list">
+            <a class="item item-button-right" href="#">
+                <h2>$25 to Mykayla S.</h2>
+                <p>on 5/24</p>
+                <button class="button button-royal">
+                    <i class="icon ion-email"></i>
+                </button>
+            </a>
+            <a class="item item-button-right" href="#">
+                <h2>$15 to Broyden M.</h2>
+                <p>on 3/15</p>
+                <button class="button button-royal">
+                    <i class="icon ion-email"></i>
+                </button>
+            </a>
+            <a class="item item-button-right" href="#">
+                <h2>$60 to Ronald B.</h2>
+                <p>on 2/01</p>
+                <button class="button button-royal">
+                    <i class="icon ion-email"></i>
+                </button>
+            </a>
+            <a class="item" href="#">
+                <h2>$100 Total</h2>
+            </a>
         </div>
     </ion-content>
 </ion-view>
