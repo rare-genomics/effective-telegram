@@ -1,0 +1,148 @@
+<ion-view view-title="General Donate">
+    <ion-content padding="true">
+        <a href="#/app/home">
+            <button class="button button-block button-royal icon-left ion-chevron-left">
+                Home
+            </button>
+        </a>
+        <h2>You amaze us! Your gift is accelerating cures for rare diseases. Thank you!</h2>
+        <p>We are incredibly thankful to people like you who give their support and make it possible for us to do what we do. Together we have helped over 400 families, discovered 8 unique genetic mutations and raised over 1.9 million towards rare disease research.</p>
+        <h3>Select an amount</h3>
+        <div class="button-bar">
+            <a class="button">$29</a>
+            <a class="button">$59</a>
+            <a class="button">$79</a>
+            <a class="button">$109</a>
+            <a class="button">Other</a>
+        </div>
+        <div class="row">
+            <div class="col">Your Donation*</div>
+            <div class="col">
+                <label class="item item-input">
+                    <input type="text" placeholder="$USD">
+                </label>    
+            </div>
+            <div class="col">
+                <ion-radio ng-model="choice" ng-value="'A'">One-time</ion-radio>
+            </div>
+            <div class="col">
+                <ion-radio ng-model="choice" ng-value="'A'">Monthly</ion-radio>    
+            </div>
+        </div>
+        <ion-checkbox ng-model="filter.pink">Dedicate my donation in honor or in memory of someone</ion-checkbox>
+
+        <h3>Your Information</h3>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">First Name</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Last Name</span>
+                <input type="text">
+            </label>
+            <ion-checkbox ng-model="filter.red">Make donation anonymous</ion-checkbox>
+            <label class="item item-input">
+                <span class="input-label">Email</span>
+                <input type="email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Phone Number</span>
+                <input type="number">
+            </label>
+            <ion-checkbox ng-model="filter.red">It's OK to contact me in the future</ion-checkbox>
+            <label class="item item-input">
+                <span class="input-label">Leave a comment</span>
+                <textarea placeholder="Let us know why you donated, tell your story, or send words of encouragement."></textarea>
+            </label>
+        </div>
+        <h3>Payment Details</h3>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Name on the card</span>
+                <input type="text" placeholder="First Name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Name on the card</span>
+                <input type="text" placeholder="Last Name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Card number</span>
+                <input type="password">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Expiration date
+                </div>
+                <select>
+                    <option selected>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                </select>
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Expiration date
+                </div>
+                <select>
+                    <option selected>Year</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Security code</span>
+                <input type="password">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Country
+                </div>
+                <select>
+                    <option selected>United States</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Address</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Address 2</span>
+                <input type="text">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">City</span>
+                <input type="text">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                State
+                </div>
+                <select>
+                    <option selected>Please Select</option>
+                    <option>Texas</option>
+                    <option>Virginia</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Zip Code</span>
+                <input type="number">
+            </label>
+            <ion-checkbox ng-model="filter.pink">I'd like to cover the processing fee so 100% of my donation goes to Rare Genomics Institute.</ion-checkbox>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="button button-large button-royal">
+                    Send Your Gift
+                </button>
+            </div>
+            <div class="col">
+                    Amount: $0.00
+            </div>
+        </div>
+        <p>By clicking I agree to the terms
+        
+    </ion-content>
+</ion-view>
