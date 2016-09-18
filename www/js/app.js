@@ -130,6 +130,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.patient-donate', {
+      url: '/patient-donate',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/patient-donate.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
