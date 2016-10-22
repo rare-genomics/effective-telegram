@@ -1,1 +1,58 @@
-/* Empty. Add your own CSS if you like */
+.center-trophy {
+    margin: 0 auto;
+    display: block;
+    color: #886aea;
+}
+.donations {
+    text-align: center;
+}
+.donate-graph {
+    display: block;
+    border: 1px solid #000;
+    height: 30px;
+    width: 100%;
+    background-color: #886aea;
+    padding: 5px;
+    background-clip:content-box;
+}
+.donate-graph:after {
+    content: '\A';
+    position: absolute;
+    background: #FFF;
+    height: 20px;
+    width: 160px;
+}
+.donate-graph-1 {
+    display: block;
+    border: 1px solid #000;
+    height: 30px;
+    width: 100%;
+    background-color: #886aea;
+    padding: 5px;
+    background-clip:content-box;
+}
+.donate-graph-2 {
+    display: block;
+    border: 1px solid #000;
+    height: 30px;
+    width: 100%;
+    background-color: #886aea;
+    padding: 5px;
+    background-clip:content-box;
+}
+.donate-graph-2:after {
+    content: '\A';
+    position: absolute;
+    background: #FFF;
+    height: 20px;
+    width: 55px;
+}
+.donate-graph-3 {
+    display: block;
+    border: 1px solid #000;
+    height: 30px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 5px;
+    background-clip:content-box;
+}

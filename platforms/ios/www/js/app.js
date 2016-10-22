@@ -58,7 +58,105 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+    .state('app.home', {
+      url: '/home',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/home.html'
+          // controller: 'HomeCtrl'
+        }
+      }
+    })
+    .state('app.news', {
+      url: '/news',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/news.html'
+          // controller: 'NewsCtrl'
+        }
+      }
+    })
+    .state('app.patients', {
+      url: '/patients',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/patients.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.news-article', {
+      url: '/news-article',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/news-article.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.patient-details', {
+      url: '/patient-details',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/patient-details.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.profile', {
+      url: '/profile',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/profile.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.donations', {
+      url: '/donations',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/donations.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.general-donate', {
+      url: '/general-donate',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/general-donate.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.patient-donate', {
+      url: '/patient-donate',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/patient-donate.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.campaign-champion', {
+      url: '/campaign-champion',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/campaign-champion.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
+    .state('app.start-campaign', {
+      url: '/start-campaign',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/start-campaign.html'
+          // controller: 'PatientsCtrl'
+        }
+      }
+    })
   .state('app.single', {
     url: '/playlists/:playlistId',
     views: {
@@ -69,5 +167,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/home');
 });
